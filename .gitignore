@@ -1,0 +1,18 @@
+*.iml
+.tools/
+.gradle/
+/local.properties
+/.idea/
+/build/
+/captures/
+/.externalNativeBuild/
+/.cxx/
+**/build/
+
+# Local source snapshots (robocopy backups); do not publish.
+backup-src/
+
+# Downloaded at build time by :app:syncOpenConnectBootstrap (LGPL binaries).
+app/src/main/jniLibs/**/*.so
+app/src/main/jniLibs/.bootstrap-*
+app/src/main/assets/raw/**/curl-bin

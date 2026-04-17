@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SSLVPN</string>
+    <string name="login_title">SSLVPN</string>
+    <string name="login_subtitle">请输入站点域名和账号（第 1 步，共 2 步）。</string>
+    <string name="gateway_title">选择网关</string>
+    <string name="gateway_account_fmt">账号：%1$s</string>
+    <string name="gateway_main_site_prefix">主站：</string>
+    <string name="lbl_site_domain">站点域名</string>
+    <string name="lbl_username">用户名</string>
+    <string name="lbl_password">密码</string>
+    <string name="lbl_server">服务器</string>
+    <string name="hint_site_domain">例如 www.example.com 或 node.example.com</string>
+    <string name="hint_server">网关地址（https://vpn.example.com）</string>
+    <string name="hint_username">用户名</string>
+    <string name="hint_password">密码</string>
+    <string name="action_continue">保存并继续</string>
+    <string name="action_back_login">返回登录</string>
+    <string name="action_connect">连接</string>
+    <string name="action_disconnect">断开</string>
+    <string name="status_idle">状态：空闲</string>
+    <string name="status_connecting">状态：正在连接</string>
+    <string name="status_connected">状态：已连接</string>
+    <string name="status_disconnected">状态：已断开</string>
+    <string name="status_permission_denied">未授予 VPN 权限</string>
+    <string name="status_error_tun">建立 TUN 设备失败</string>
+    <string name="status_error_connect">连接失败：%1$s</string>
+    <string name="status_error_validation">请填写网关地址、用户名和密码</string>
+    <string name="status_error_login_step1">请填写站点域名、用户名和密码。</string>
+    <string name="status_error_domain">无法从站点域名中解析出主机名。</string>
+    <string name="status_error_apex">无法从该主机名解析出注册域名，请尝试完整主机名（例如 www.example.com）。</string>
+    <string name="status_error_no_server">请从列表中选择一个服务器。</string>
+
+    <string name="openconnect_err_auth_template">认证失败（%1$d）\n%2$s</string>
+    <string name="openconnect_err_eio">该错误通常表示 TLS/HTTPS 读写异常或网关返回异常（不一定只是密码错误）。请检查网关地址、强制门户、证书链，或是否需 SAML/双因素认证。详见 logcat 标签 OpenConnectSession 中的 LIB 日志。</string>
+    <string name="openconnect_err_eperm">操作不允许（例如证书被策略拒绝）。</string>
+    <string name="openconnect_err_enoent">网关路径上缺少文件或资源。</string>
+    <string name="openconnect_err_einval">参数无效或认证响应格式错误。</string>
+    <string name="openconnect_err_etimedout">连接超时。</string>
+    <string name="openconnect_err_ehostunreach">主机不可达。</string>
+    <string name="openconnect_err_other">详见 logcat（OpenConnectSession）；若网关使用 SAML，请尝试浏览器登录。</string>
+</resources>
