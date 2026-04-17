@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SSLVPN</string>
+    <string name="login_title">SSLVPN</string>
+    <string name="login_subtitle">請輸入站點網域與帳號（第 1 步，共 2 步）。</string>
+    <string name="gateway_title">選擇閘道</string>
+    <string name="gateway_account_fmt">帳號：%1$s</string>
+    <string name="gateway_main_site_prefix">主站：</string>
+    <string name="lbl_site_domain">站點網域</string>
+    <string name="lbl_username">使用者名稱</string>
+    <string name="lbl_password">密碼</string>
+    <string name="lbl_server">伺服器</string>
+    <string name="hint_site_domain">例如 www.example.com 或 node.example.com</string>
+    <string name="hint_server">閘道位址（https://vpn.example.com）</string>
+    <string name="hint_username">使用者名稱</string>
+    <string name="hint_password">密碼</string>
+    <string name="action_continue">儲存並繼續</string>
+    <string name="action_back_login">返回登入</string>
+    <string name="action_connect">連線</string>
+    <string name="action_disconnect">中斷</string>
+    <string name="status_idle">狀態：閒置</string>
+    <string name="status_connecting">狀態：連線中</string>
+    <string name="status_connected">狀態：已連線</string>
+    <string name="status_disconnected">狀態：已中斷</string>
+    <string name="status_permission_denied">未授予 VPN 權限</string>
+    <string name="status_error_tun">建立 TUN 裝置失敗</string>
+    <string name="status_error_connect">連線失敗：%1$s</string>
+    <string name="status_error_validation">請填寫閘道位址、使用者名稱與密碼</string>
+    <string name="status_error_login_step1">請填寫站點網域、使用者名稱與密碼。</string>
+    <string name="status_error_domain">無法從站點網域中解析出主機名稱。</string>
+    <string name="status_error_apex">無法從該主機名稱解析出註冊網域，請嘗試完整主機名稱（例如 www.example.com）。</string>
+    <string name="status_error_no_server">請從清單中選擇一個伺服器。</string>
+
+    <string name="openconnect_err_auth_template">認證失敗（%1$d）\n%2$s</string>
+    <string name="openconnect_err_eio">此錯誤通常表示 TLS/HTTPS 讀寫異常或閘道回應異常（不一定只是密碼錯誤）。請檢查閘道位址、強制入口網、憑證鏈，或是否需要 SAML/雙因素驗證。詳見 logcat 標籤 OpenConnectSession 的 LIB 日誌。</string>
+    <string name="openconnect_err_eperm">操作不允許（例如憑證被原則拒絕）。</string>
+    <string name="openconnect_err_enoent">閘道路徑上缺少檔案或資源。</string>
+    <string name="openconnect_err_einval">參數無效或認證回應格式錯誤。</string>
+    <string name="openconnect_err_etimedout">連線逾時。</string>
+    <string name="openconnect_err_ehostunreach">主機無法連線。</string>
+    <string name="openconnect_err_other">詳見 logcat（OpenConnectSession）；若閘道使用 SAML，請嘗試瀏覽器登入。</string>
+</resources>

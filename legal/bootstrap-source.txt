@@ -1,0 +1,13 @@
+Native libraries libopenconnect.so and libstoken.so, and the curl-bin helper,
+are extracted at build time from the F-Droid build of
+net.openconnect_vpn.android versionCode 1120 (APK:
+https://f-droid.org/repo/net.openconnect_vpn.android_1120.apk).
+
+OpenConnect / libopenconnect is LGPL-2.1 (see upstream COPYING.LGPL).
+Corresponding source for that F-Droid build is published by the F-Droid
+and upstream OpenConnect projects; you can rebuild matching binaries from
+https://gitlab.com/openconnect/openconnect and the F-Droid metadata for
+net.openconnect_vpn.android.
+
+The Java binding org.infradead.libopenconnect.LibOpenConnect is taken from
+the upstream OpenConnect tree under the same LGPL-2.1 terms.

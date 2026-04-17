@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">SSL VPN Android</string>
-    <string name="hint_server">Server URL (https://...)</string>
+    <string name="app_name">SSLVPN</string>
+    <string name="login_title">SSLVPN</string>
+    <string name="login_subtitle">Enter your site domain and account (step 1 of 2).</string>
+    <string name="gateway_title">Choose gateway</string>
+    <string name="gateway_account_fmt">Account: %1$s</string>
+    <string name="gateway_main_site_prefix">Main site: </string>
+    <string name="lbl_site_domain">Site domain</string>
+    <string name="lbl_username">Username</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_server">Server</string>
+    <string name="hint_site_domain">e.g. www.example.com or node.example.com</string>
+    <string name="hint_server">Gateway URL (https://vpn.example.com)</string>
     <string name="hint_username">Username</string>
     <string name="hint_password">Password</string>
+    <string name="action_continue">Save &amp; continue</string>
+    <string name="action_back_login">Back to login</string>
     <string name="action_connect">Connect</string>
     <string name="action_disconnect">Disconnect</string>
     <string name="status_idle">Status: idle</string>
@@ -13,5 +25,19 @@
     <string name="status_permission_denied">VPN permission denied</string>
     <string name="status_error_tun">Failed to establish TUN device</string>
     <string name="status_error_connect">Connection failed: %1$s</string>
-    <string name="status_error_validation">Please fill server, username and password</string>
+    <string name="status_error_validation">Please fill gateway URL, username and password</string>
+    <string name="status_error_login_step1">Please fill site domain, username and password.</string>
+    <string name="status_error_domain">Could not read a hostname from the site domain field.</string>
+    <string name="status_error_apex">Could not derive the registrable domain from that hostname. Try a full hostname (e.g. www.example.com).</string>
+    <string name="status_error_no_server">Please select a server from the list.</string>
+
+    <!-- libopenconnect obtainCookie() negative codes are usually negated errno; -5 ≈ -EIO -->
+    <string name="openconnect_err_auth_template">Authentication failed (%1$d)\n%2$s</string>
+    <string name="openconnect_err_eio">This code often means TLS/HTTPS I/O or an unexpected gateway response (not necessarily a wrong password). Check gateway URL, captive portal, certificate chain, or whether SAML/2FA is required. See logcat tag OpenConnectSession for LIB lines.</string>
+    <string name="openconnect_err_eperm">Operation not permitted (e.g. certificate rejected by policy).</string>
+    <string name="openconnect_err_enoent">Missing file or resource on the gateway path.</string>
+    <string name="openconnect_err_einval">Invalid argument or malformed auth response.</string>
+    <string name="openconnect_err_etimedout">Connection timed out.</string>
+    <string name="openconnect_err_ehostunreach">Host unreachable.</string>
+    <string name="openconnect_err_other">See logcat (OpenConnectSession) for details, or use a browser-based login if your VPN uses SAML.</string>
 </resources>

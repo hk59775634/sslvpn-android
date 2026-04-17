@@ -6,7 +6,10 @@ import com.sslvpn.android.vpn.model.VpnConfig
 
 class MockVpnEngine : VpnEngine {
     override fun connect(service: VpnService, tunFd: Int, config: VpnConfig) {
-        Log.i(TAG, "Mock connect: server=${config.server}, user=${config.username}, tunFd=$tunFd")
+        Log.i(
+            TAG,
+            "Mock connect: server=${config.server}, user=${config.username}, authGroup=${config.authGroup}, tunFd=$tunFd"
+        )
     }
 
     override fun disconnect() {
