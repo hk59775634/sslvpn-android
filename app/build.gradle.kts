@@ -6,6 +6,9 @@ plugins {
 android {
     namespace = "com.sslvpn.android"
     compileSdk = 35
+    buildFeatures {
+        buildConfig = true
+    }
 
     defaultConfig {
         applicationId = "com.sslvpn.android"
@@ -13,6 +16,8 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "0.1.0"
+        // Set to true until native gomobile/JNI bridge lands.
+        buildConfigField("boolean", "USE_MOCK_ENGINE", "true")
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

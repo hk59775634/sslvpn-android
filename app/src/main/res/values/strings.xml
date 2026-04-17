@@ -8,6 +8,10 @@
     <string name="action_disconnect">Disconnect</string>
     <string name="status_idle">Status: idle</string>
     <string name="status_connecting">Status: connecting</string>
+    <string name="status_connected">Status: connected</string>
     <string name="status_disconnected">Status: disconnected</string>
     <string name="status_permission_denied">VPN permission denied</string>
+    <string name="status_error_tun">Failed to establish TUN device</string>
+    <string name="status_error_connect">Connection failed: %1$s</string>
+    <string name="status_error_validation">Please fill server, username and password</string>
 </resources>
